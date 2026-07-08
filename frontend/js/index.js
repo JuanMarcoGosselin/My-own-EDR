@@ -14,12 +14,12 @@ fetch("http://127.0.0.1:8000/events")
             fila.appendChild(host)
 
             const timestamp = document.createElement("td")
-            timestamp.textContent = event.timestamp
+            timestamp.textContent = event.timestamps
             fila.appendChild(timestamp)
 
             
             const name = document.createElement("td")
-            name.textContent = event.name
+            name.textContent = event.process_name
             fila.appendChild(name)
 
             const pid = document.createElement("td")
