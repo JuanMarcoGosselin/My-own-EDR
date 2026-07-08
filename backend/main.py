@@ -17,6 +17,7 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
+#Receive events from the the network endpoint or host
 @app.post("/events")
 def receive_event(event: EventSchema): 
     db = SessionLocal()
@@ -26,6 +27,7 @@ def receive_event(event: EventSchema):
     db.commit()
     return {"message" : "OK"}
 
+#Allow frontend via to read information from the database published on /events 
 @app.get("/events")
 def show_events():
     db = SessionLocal()
