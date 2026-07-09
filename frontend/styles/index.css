@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(45deg, rgb(16, 0, 46), rgb(5, 70, 110));
+    background-repeat: no-repeat;
+
+}
+#tabla{
+    background-color: rgba(39, 0, 86, 0);
+    color: white;
+    width: 2000px;
+    width: fit-content;
+    margin: 50px auto;
+
+}
+tr{
+    border: 2px solid rgb(1, 110, 110);
+    padding: 40px;
+}
+td {
+    padding: 40px;
+    border: 2px solid rgb(1, 110, 110);
+}
+th {
+    padding: 40px;
+    border: 2px solid rgb(1, 110, 110);
+    background: linear-gradient(40deg, rgba(1, 110, 110, 0.601), rgb(39, 0, 86));
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid rgb(1, 110, 110);
+    text-align: center;
+}
