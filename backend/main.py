@@ -31,5 +31,5 @@ def receive_event(event: EventSchema):
 @app.get("/events")
 def show_events():
     db = SessionLocal()
-    results = db.query(ProcessEvents).limit(100).all()
+    results = db.query(ProcessEvents).order_by(ProcessEvents.id.desc()).limit(100).all()
     return results
